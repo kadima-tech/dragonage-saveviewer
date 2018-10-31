@@ -47,6 +47,7 @@ pages:
   artifacts:
     paths:
       - build
+      - public
 
   only:
     - 1-integrate-ci-cd
