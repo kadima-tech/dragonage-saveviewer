@@ -19,7 +19,7 @@ build app:
     - ./ci/bin/build
 
   artifacts:
-    paths: 
+    paths:
       - build
 
 test app:
@@ -42,11 +42,11 @@ pages:
   image: registry.gitlab.com/kadima/docker/node-docker:master
   script:
     - mkdir -p public
-    - cp -rf build 
+    - cp -rf build/* publics
     - ./ci/bin/docker-publish -i $CI_PROJECT_PATH -r registry.gitlab.com
 
   artifacts:
-    paths: 
+    paths:
       - build
 
   only:
