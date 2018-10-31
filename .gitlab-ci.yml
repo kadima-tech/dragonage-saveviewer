@@ -42,7 +42,7 @@ pages:
   image: registry.gitlab.com/kadima/docker/node-docker:master
   script:
     - mkdir -p public
-    - cp -rf build/* publics
+    - cp -rf build/* public
     - ./ci/bin/docker-publish -i $CI_PROJECT_PATH -r registry.gitlab.com
 
   artifacts:
