@@ -1,0 +1,3 @@
+[submodule "ci"]
+	path = ci
+	url = ../../../kadima/ci/web-ci.git

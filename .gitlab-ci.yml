@@ -1,0 +1,54 @@
+variables:
+  CI: "true"
+  DOCKER_HOST: tcp://docker:2375/
+  GIT_SUBMODULE_STRATEGY: recursive
+
+services:
+- docker:dind
+
+stages:
+  - build
+  - test
+  - qa
+  - deploy
+
+build app:
+  stage: build
+  image: node:10
+  script:
+    - ./ci/bin/build
+
+  artifacts:
+    paths: 
+      - build
+
+test app:
+  stage: test
+  image: node:10
+  script:
+    - ./ci/bin/test
+
+lint app:
+  stage: qa
+  image: node:10
+  script:
+    - ./ci/bin/lint
+
+pages:
+  services:
+  - docker:dind
+
+  stage: deploy
+  image: registry.gitlab.com/kadima/docker/node-docker:master
+  script:
+    - mkdir -p public
+    - cp -rf build 
+    - ./ci/bin/docker-publish -i $CI_PROJECT_PATH -r registry.gitlab.com
+
+  artifacts:
+    paths: 
+      - build
+
+  only:
+    - 1-integrate-ci-cd
+    - tags
