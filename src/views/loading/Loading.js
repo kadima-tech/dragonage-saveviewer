@@ -7,8 +7,8 @@
 import React from 'react';
 
 
-export const Loading = ({ state }) => (
+export const Loading = ({ uploadState }) => (
   <div>
-    <h2>{state}</h2>
+    <h2>{uploadState}</h2>
   </div>
 );

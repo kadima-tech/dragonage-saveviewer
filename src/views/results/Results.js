@@ -16,17 +16,17 @@ const ChapterTitle = styled.h2`
   color:#b30201;
 `;
 
-export const Results = ({ chapters }) => (
+export const Results = ({ choices }) => (
   <Container>
     {
-      chapters.map(chapter => (
+      choices.map(_choice => (
         <div>
-          <ChapterTitle>{chapter[0].chapter}</ChapterTitle>
+          <ChapterTitle>{_choice[0].chapter}</ChapterTitle>
           {
-            chapter.map(({question, choice}) => (
+            _choice.map(({question, choice}) => (
               <div>
                 <b>{question}</b> <br/>
-                <span>{choice}</span>
+                <span>{choice}</span> <br/><br/>
               </div>
             ))
           }
@@ -37,5 +37,5 @@ export const Results = ({ chapters }) => (
 );
 
 Results.defaultProps = {
-  chapters: [],
+  choices: [],
 }

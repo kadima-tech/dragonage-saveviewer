@@ -16,7 +16,7 @@ const DropBox = styled.div`
   width: 100%;
 `;
 
-const InnerButton = styled.button`
+const InnerButton = styled.label`
   float: right;
   background: -webkit-linear-gradient(#b30201, #790101);
   background: -o-linear-gradient(#b30201, #790101);
@@ -62,12 +62,12 @@ const Placeholder = styled.span`
   font-size: 16px;
 `;
 
-export const UploadBox = () => (
+export const UploadBox = ({ onUpload }) => (
   <div>
     <DropBox>
-      <InnerButton>
+      <InnerButton htmlFor="save-file-input">
         <span>Browse</span>
-        <InputField type="file" />
+        <InputField id="save-file-input" type="file" onChange={onUpload}/>
       </InnerButton>
       <Placeholder>
         Browse or drag file...

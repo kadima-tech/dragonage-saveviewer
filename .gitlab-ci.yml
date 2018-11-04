@@ -39,7 +39,7 @@ pages:
   - docker:dind
 
   stage: deploy
-  image: registry.gitlab.com/kadima/docker/node-docker:master
+  
   script:
     - mkdir -p public
     - cp -rf build/* public

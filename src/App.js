@@ -7,6 +7,8 @@ import { Home } from './views/home/Home';
 import { Loading } from './views/loading/Loading';
 import { Results } from './views/results/Results';
 
+import { saveFileService } from './services/SaveFileService';
+
 import './App.css';
 
 const Body = styled.div`
@@ -36,28 +38,52 @@ class App extends Component {
   constructor() {
     super();
 
+    saveFileService.setProgressListener(this.onProgress);
+
     this.state = {
-      View: Views.Home
+      View: Views.Home,
+      upload: 'idle',
+      choices: [],
     }
+  }
+
+  onProgress = (newState) => {
+    this.setState({
+      upload: newState,
+    });
   }
 
   onNavigateHandler = (target) => {
     this.setState({
-      View: Views[target]
+      View: Views[target],
     });
   }
 
-  onUploadHandler = (target) => {
+  onUploadHandler = async (target) => {
+    this.setState({
+      View: Loading,
+    });
     // Deal with the upload here
+    const result = await saveFileService.upload(target.currentTarget.files[0]);
+    console.log(result);
+    this.setState({
+      View: Results,
+      choices: result,
+    })
   }
 
   render() {
-    const { View } = this.state;
+    const { View, upload, choices } = this.state;
 
     return (
       <Body>
         <Container>
-          <View onNavigate={this.onNavigateHandler} onUpload={this.onUploadHandler}/>
+          <View
+            onNavigate={this.onNavigateHandler}
+            onUpload={this.onUploadHandler}
+            uploadState={upload}
+            choices={choices}
+          />
         </Container>
       </Body>
     );

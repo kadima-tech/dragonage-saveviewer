@@ -10,7 +10,6 @@ const Container = styled.div`
   bottom: 0;
   text-align: right;
   width: 575px;
-  height: 100%;
 `;
 
 const Title = styled.h1`
@@ -30,6 +29,7 @@ const Accent = styled.span`
 
 export const Home = ({ onNavigate, onUpload }) => (
   <Container>
+  <Container>
     <Title>Dragon Age <Accent>Save Game Tool</Accent></Title>
     <Subtitle>Use your old save-file with Dragon Age: Inquisition</Subtitle>
     <p>
@@ -37,7 +37,8 @@ export const Home = ({ onNavigate, onUpload }) => (
       You can use these to enter your story into the Dragon Age Keep and retain your story without having to remember every
       minor choice you made.
     </p>
-    <UploadBox />
+    <UploadBox onUpload={onUpload} />
     <Navigation active={Links.Home} onNavigate={onNavigate} />
+    </Container>
   </Container>
 );

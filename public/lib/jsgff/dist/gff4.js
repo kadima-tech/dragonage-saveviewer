@@ -20,6 +20,7 @@
 (function() {
   // Might need to set these to appropriate names
   // This file depends on ByteBuffer, JSPack and DataTypes
+  // These are all included in this distribution package
 
   //var ByteBuffer, DataTypes, File, FileReader, GFF4, JSPack, fs;
   //var GFF4;
@@ -33,22 +34,6 @@
   // Include BEFORE this file
   // DataTypes = require('./datatypes');
 
-
-  /*
-  pyPrint = (json, name) ->
-    str ="HeaderField(label={label}, type={type}, is_list={is_list}, is_struct={is_struct}, is_reference={is_reference}, offset={offset})"
-    str =str.replace("{label}",json.label).replace("{type}",json.type).replace("{is_list}",json.is_list).replace("{is_struct}",json.is_struct).replace("{is_reference}",json.is_reference).replace("{offset}",json.offset)
-    console.log str.replace(/true/g,'True').replace(/false/g,'False')
-
-  fldTypePrint = (kind) ->
-    if !!kind.fourcc
-      console.log "Struct" + kind.fourcc
-    else if !!kind.name
-      console.log kind.name
-    else
-      console.log kind
-   */
-
   GFF4 = (function() {
     function GFF4() {
       this.Header40Format = this._bistruct('4s4sII');
@@ -58,44 +43,10 @@
       this.datatypes = new DataTypes();
     }
 
-    GFF4.prototype.Worker = function Worker(buffer){
-      console.log("Worker reached");
-      console.log(buffer);
-      gff4 = new GFF4();
-      bytebuffer = new ByteBuffer(buffer);
-      try {
-        result = gff4.read_gff4(bytebuffer);
-        //TODO: Check file version and use the right flags for Dragon Age 2 support
-        return {
-          file_version: result.header.file_version,
-          plot_data: result[16003][16400][16401]
-        };
-      } catch(e) {
-        return e;
-      }
-    }
-
     GFF4.prototype.Synchronous = function(buffer){
       bytebuffer = new ByteBuffer(buffer);
       return this.read_gff4(bytebuffer);
     }
-
-
-    GFF4.prototype.fetch_buffer = function(file, callback){
-      this._load_file(file, function(err, bin_data){
-        callback(null, bin_data.target.result);
-      });
-    }
-
-    GFF4.prototype._load_file = function(file, callback) {
-      var reader;
-      reader = new FileReader();
-      reader.onload = function(result) {
-        return callback(null, result);
-      };
-      reader.readAsArrayBuffer(file);
-      return reader
-    };
 
     GFF4.prototype.read_gff4 = function(f) {
       console.log("entered function");

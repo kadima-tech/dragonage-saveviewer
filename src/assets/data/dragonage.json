@@ -1,0 +1,1136 @@
+{
+  "default": {
+    "guids": {
+      "party_list": 16003,
+      "plot_manager": 16400,
+      "plot_list": 16401,
+      "plot_guid": 16402,
+      "plot_flags": [
+        16403,
+        16404,
+        16405,
+        16406
+      ]
+    },
+    "quests": {
+      "C9736A91F42440758E570D9ECD796597": {
+        "chapter": "Hero Origin",
+        "choices": [
+          {
+            "label": "What was your hero's origin?",
+            "flags": {
+              "0": "Circle of Magi",
+              "1": "Dwarf Commoner",
+              "2": "Dwarf Noble",
+              "3": "City Elf",
+              "4": "Dalish Elf",
+              "7": "Human Noble",
+              "default": "Invalid Origin"
+            },
+            "id": "df3dad75-931a-443b-b803-789e54df7a13"
+          }
+        ]
+      },
+      "F0CCF894E7F844A99BDF263D6DBB618A": {
+        "chapter": "Prologue",
+        "choices": [
+          {
+            "label": "What did the Warden do with the hungry deserter in Ostagar?",
+            "flags": {
+              "1": "Ostagar prisoner killed",
+              "5": {
+                "6": "Bought food to feed Ostagar prisoner",
+                "7": "Either fed Ostagar prisoner guard's lunch or fed Ostagar prisoner stolen food",
+                "default": "Key stolen from Ostagar prisoner"
+              },
+              "default": "Ostagar prisoner left alone"
+            },
+            "id": "a9b11338-f657-4481-bd52-a58ceb568c95"
+          }
+        ]
+      },
+      "208DD668D74C413994BD638732767B64": {
+        "chapter": "Prologue",
+        "choices": [
+          {
+            "label": "What did the Warden do with the mabari hound in Ostagar?",
+            "flags": {
+              "4": "Cured mabari hound",
+              "5": "Put mabari hound out of its misery",
+              "9": "Cured mabari hound",
+              "default": "Didn't help mabari hound"
+            },
+            "id": "2dd14b85-bd57-4e82-8948-1fed70d617bd"
+          }
+        ]
+      },
+      "C232DA078A044178AA9FCBC6E537FA75": {
+        "chapter": "The Broken Circle",
+        "choices": [
+          {
+            "label": "Who did the Warden support at the Broken Circle?",
+            "flags": {
+              "4": "Templars supported",
+              "5": "Mages supported",
+              "default": "Invalid choice"
+            },
+            "id": "a461c19b-631c-4339-ae93-08b4cf5960be"
+          }
+        ]
+      },
+      "AE2F51ECCFCB46C0B145514455F6E0BB": {
+        "chapter": "The Broken Circle",
+        "choices": [
+          {
+            "label": "Did First Enchanter Irving survive the battle against Uldred?",
+            "flags": {
+              "4": "First Enchanter Irving died in battle",
+              "default": "First Enchanter Irving survived battle"
+            },
+            "id": "dd771863-07a5-4e37-ac6b-6dfc2721bae9"
+          }
+        ]
+      },
+      "B571814CBBA44127B605740BD5483A69": {
+        "chapter": "A Paragon of her Kind",
+        "choices": [
+          {
+            "label": "Who rules in Orzammar?",
+            "flags": {
+              "7": "Bhelen rules Orzammar",
+              "8": "Harrowmont rules Orzammar",
+              "default": "Invalid choice"
+            },
+            "id": "2cca3141-2dc3-4bac-85f4-b292bac84247"
+          }
+        ]
+      },
+      "86FBBD4CB45D47FF885B0B2BB5407D1E": {
+        "chapter": "A Paragon of her Kind",
+        "choices": [
+          {
+            "label": "What happened to the Anvil of the Void?",
+            "flags": {
+              "4": "Joined forces against Caridin",
+              "10": "Branka ended her own life",
+              "26": "Defeated Branka",
+              "default": "Invalid choice"
+            },
+            "id": "f44933a0-e8a2-4950-bb5d-86afe6caa984"
+          }
+        ]
+      },
+      "87AFF6349A0447B485A18D786E58682B": {
+        "chapter": "A Paragon of her Kind",
+        "choices": [
+          {
+            "label": "What was the fate of Zerlinda and her son?",
+            "flags": {
+              "2": "Zerlinda left son in the Deep Roads",
+              "3": "Zerlinda taken in by Burkel's chantry",
+              "5": "Helped Zerlinda reconcile with family",
+              "12": "Zerlinda left for the surface",
+              "default": "Zerlinda remained in Dust Town"
+            },
+            "id": "22aee739-b57f-4472-9e88-8a81365feef0"
+          }
+        ]
+      },
+      "6EA7AC67D12B402084CA9905D3815F7D": {
+        "chapter": "A Paragon of her Kind",
+        "choices": [
+          {
+            "label": "Did the Warden help Brother Burkel create a Chantry in Orzammar?",
+            "flags": {
+              "1": "Helped Burkel create Chantry",
+              "default": "Didn't help Burkel create Chantry"
+            },
+            "id": "f901259e-07a8-4df3-96cc-ea67e80cbb6f"
+          }
+        ]
+      },
+      "D5ED00AC5DBD4AFE9E9AC5704FCDBA34": {
+        "chapter": "A Paragon of her Kind",
+        "choices": [
+          {
+            "label": "Did the Warden complete Rogek's lyrium deal?",
+            "flags": {
+              "5": "Completed Rogek's lyrium deal",
+              "default": "Didn't complete Rogek's lyrium deal"
+            },
+            "id": "8beafa7d-d738-4b72-abf1-553f8838f108"
+          }
+        ]
+      },
+      "47DFDD542B48460CBC08E55B9DFA9BBE": {
+        "chapter": "A Paragon of her Kind",
+        "choices": [
+          {
+            "label": "How did the Warden complete Filda's quest to find her son Ruck in the Deep Roads?",
+            "flags": {
+              "7": {
+                "1": "Killed Ruck & told truth",
+                "2": "Killed Ruck, said he died heroically",
+                "default": "Killed Ruck & lied"
+              },
+              "8": {
+                "1": "Said Ruck died",
+                "default": "Told truth about Ruck"
+              },
+              "default": "Didn't speak to Filda"
+            },
+            "id": "98cc5556-8987-44f2-ab78-c5177aa357cb"
+          }
+        ]
+      },
+      "FF482830F073470CACEA04B640C2560F": {
+        "chapter": "A Paragon of her Kind",
+        "choices": [
+          {
+            "label": "Did the Warden prove to the Shaperate that the Legion of the Dead was connected with a noble house?",
+            "flags": {
+              "2": "Proved Legion of Dead connected to noble house",
+              "default": "Didn't prove Legion of Dead connected to noble house"
+            },
+            "id": "22e0706b-7853-4b83-8120-f99be0af77c6"
+          }
+        ]
+      },
+      "3324ED085FC640308F8753382634149E": {
+        "chapter": "A Paragon of her Kind",
+        "choices": [
+          {
+            "label": "How did the Warden deal with Dagna's request to become a scholar at the Circle Tower?",
+            "flags": {
+              "2": "Dagna left to study",
+              "6": "Refused to help Dagna",
+              "7": "UNCHECKED: Convince Dagna to stay with father",
+              "14": "Told Dagna the Circle destroyed",
+              "default": "Didn't talk to Dagna"
+            },
+            "id": "c9a18220-7362-4dfe-b0de-b6177e4e2006"
+          }
+        ]
+      },
+      "2C50728792CD464E82C27F3512C8E511": {
+        "chapter": "A Paragon of her Kind",
+        "choices": [
+          {
+            "label": "What did the Warden decide to do with the tome stolen from the Shaperate?",
+            "flags": {
+              "3": "Returned tome to Shaperate",
+              "4": "Sold tome to a fence",
+              "default": "Didn't look into stolen tome"
+            },
+            "id": "640049d2-76c6-477f-9af1-91f3eb075b6d"
+          }
+        ]
+      },
+      "1CF820951F69492495FBF635A8B0F68E": {
+        "chapter": "A Paragon of her Kind",
+        "choices": [
+          {
+            "label": "Did the Warden help Orta find the proof she needs to join the Assembly as a member of House Ortan?",
+            "flags": {
+              "4": "Helped Orta join Assembly",
+              "default": "Didn't help Orta join Assembly"
+            },
+            "id": "9f8ba0f9-6cec-4c62-a78d-12548501202e"
+          }
+        ]
+      },
+      "53175C027A464CEEB9BCC6F918EAED53": {
+        "chapter": "A Paragon of her Kind",
+        "choices": [
+          {
+            "label": "Did the Warden have relations with Mardy before being cast out of Orzammar?",
+            "flags": {
+              "3": "Didn't have relations with Mardy",
+              "default": "Didn't encounter Mardy (Check 'Did warden sleep with mardy?')"
+            },
+            "id": "b7383ed5-2150-4050-a7e2-232c8269e1ec"
+          }
+        ]
+      },
+      "4D7A6069A935486D879C32F9EABBE770": {
+        "chapter": "A Paragon of her Kind",
+        "choices": [
+          {
+            "label": "Did warden sleep with Mardy?",
+            "flags": {
+              "3": "Had relations with Mardy",
+              "4": "Had relations with Mardy",
+              "default": "See previous relationship with mardy choice"
+            },
+            "id": "18caa705-de17-40d9-93b3-2f5b5799caa6"
+          }
+        ]
+      },
+      "C93EAEA757434D5A893E7D7E2F636F8A": {
+        "chapter": "A Paragon of her Kind",
+        "choices": [
+          {
+            "label": "Did the Warden restore Mardy's son's birthright?",
+            "flags": {
+              "1": "Didn't restore Mardy's son's birthright",
+              "2": "Restored Mardy's son's birthright",
+              "4": "Didn't restore Mardy's son's birthright",
+              "default": "Didn't have son with Mardy/Didn't encounter Mardy's son (Depending on if warden had relationship with Mardy)"
+            },
+            "id": "3d8d1bfb-aa3c-4601-b915-38fd2803612d"
+          }
+        ]
+      },
+      "63DD3FD0AE584D59877B55269963459D": {
+        "chapter": "Nature of the Beast",
+        "choices": [
+          {
+            "label": "How did the Warden resolve the problems between the werewolves and the elves? [*]",
+            "flags": {
+              "0": "Brokered peace",
+              "13": "Sided with werewolves",
+              "14": "Sided with elves",
+              "default": "Invalid Choice"
+            },
+            "id": "02522f89-a9d0-4844-8910-be40228239b3"
+          }
+        ]
+      },
+      "18B66CC3E6E949FE93E85ED237EF934B": {
+        "chapter": "Nature of the Beast",
+        "choices": [
+          {
+            "label": "How did the Warden handle Cammen's broken heart?",
+            "flags": {
+              "2": "Broke Cammen & Gheyna up (Seduced)",
+              "3": "Broke Cammen & Gheyna up",
+              "4": "Brought Cammen & Gheyna together",
+              "29": "Broke Cammen & Gheyna up",
+              "default": "Didn't encounter Cammen & Gheyna"
+            },
+            "id": "674895a8-720e-4580-b23d-2f7886172e55"
+          }
+        ]
+      },
+      "8BFAAEE6FDD344A4932C1BFF152ABE4D": {
+        "chapter": "Nature of the Beast",
+        "choices": [
+          {
+            "label": "How did the Warden handle Elora's sick halla?",
+            "flags": {
+              "3": "Saved the halla",
+              "6": "Allowed halla to be killed",
+              "7": "Saved the halla (Lied)",
+              "default": "Could not help Elora"
+            },
+            "id": "46c9c2ee-7094-4c10-94bb-bf5657a4a13f"
+          }
+        ]
+      },
+      "7B5C94475ECF428F83E8F548D390EF91": {
+        "chapter": "Nature of the Beast",
+        "choices": [
+          {
+            "label": "Did the Warden tell Athras about the fate of his wife, Danyla?",
+            "flags": {
+              "3": "Told Athras about wife's fate",
+              "default": "Didn't tell Athras about wife's fate"
+            },
+            "id": "e38dabe7-ee2e-44d9-bd13-56447ec95cf8"
+          }
+        ]
+      },
+      "BE651409871F475E9FC20C48F6FBC8CE": {
+        "chapter": "Nature of the Beast",
+        "choices": [
+          {
+            "label": "Did the Warden bring Varathorn the ironbark he needed?",
+            "flags": {
+              "5": "Brought Varathorn ironbark",
+              "12": "Brought Varathorn ironbark without reward",
+              "default": "Didn't bring Varathorn ironbark"
+            },
+            "id": "a7aee4eb-eabe-4f16-be77-f4be15aa6619"
+          }
+        ]
+      },
+      "AECCCA7FE54A4F28AC2838B15AC39ED6": {
+        "chapter": "Nature of the Beast",
+        "choices": [
+          {
+            "label": "How did the Warden deal with Deygan in the Brecilian Forest?",
+            "flags": {
+              "0": "Killed Deygan",
+              "1": "Returned Deygan to Dalish camp",
+              "2": "Returned Deygan to Dalish camp",
+              "28": "Killed Deygan",
+              "default": "Didn't encounter Deygan"
+            },
+            "id": "752d6731-c313-4ac1-8562-fce286977aa3"
+          }
+        ]
+      },
+      "EC0948ED98544E25A47CD6790DA71469": {
+        "chapter": "Arl of Redcliffe",
+        "choices": [
+          {
+            "label": "Did the Warden help the people of Redcliffe prepare for the attack of the undead hordes?",
+            "flags": {
+              "12": "Didn't help Redcliffe prepare",
+              "21": "Helped Redcliffe prepare",
+              "default": "Invalid Choice"
+            },
+            "id": "0ad95832-f5cc-413c-9a50-896331fd3a56"
+          }
+        ]
+      },
+      "C8BD51CF3BC0414192BFF6BC6BF8247C": {
+        "chapter": "Arl of Redcliffe",
+        "choices": [
+          {
+            "label": "Did the Warden help the village of Redcliffe fight the undead hordes at nightfall?",
+            "flags": {
+              "0": "Helped Redcliffe fight",
+              "7": "Didn't help Redcliffe fight",
+              "default": "Invalid Choice"
+            },
+            "id": "81ec6238-f89d-4830-b404-9214553919d8"
+          }
+        ]
+      },
+      "245482960AA04DB58C90E40C8354B6B5": {
+        "chapter": "Arl of Redcliffe",
+        "choices": [
+          {
+            "label": "What happened to Connor?",
+            "flags": {
+              "19": "Connor alive",
+              "default": "Connor died"
+            },
+            "id": "23f7cbab-b268-4a71-bf4f-3da1d2147d0f"
+          }
+        ]
+      },
+      "80D1FC2FA12E457896C0F1B64E51EEBC": {
+        "chapter": "Arl of Redcliffe",
+        "choices": [
+          {
+            "label": "Did the warden accept the demon's offer in the fade?",
+            "flags": {
+              "7": "Yes (Connor possessed)",
+              "17": "No (Connor not possessed)",
+              "default": "Invalid Choice"
+            },
+            "id": "5ebf0a5a-de60-4b32-97e1-6585e87a312b"
+          }
+        ]
+      },
+      "3EE3B5C37C8D4A15B2F62A0AED56AB0F": {
+        "chapter": "Arl of Redcliffe",
+        "choices": [
+          {
+            "label": "What did the Warden do to help Kaitlyn find her brother Bevin?",
+            "flags": {
+              "6": {
+                "7": "Scared Bevin back to Chantry",
+                "8": "Scared Bevin back to Chantry",
+                "10": "Freed Bevin & took sword",
+                "15": "Freed Bevin & paid for sword",
+                "16": "Freed Bevin & paid for sword",
+                "19": "Freed Bevin & took sword",
+                "20": "Freed Bevin & took sword",
+                "default": "Freed Bevin, did not find sword"
+              },
+              "default": "Did nothing to help find Bevin"
+            },
+            "id": "ee131f43-738e-477b-b611-c4bee335a34f"
+          }
+        ]
+      },
+      "65518CE61C8C4004970E6A85A9E5127C": {
+        "chapter": "Arl of Redcliffe",
+        "choices": [
+          {
+            "label": "Did the Warden rescue Owen the Blacksmith's daughter, Valena?",
+            "flags": {
+              "4": "Helped Owen's daughter escape (Owen alive)",
+              "5": "Helped Owen's daughter escape (Owen dead)",
+              "default": "Never rescued Owen's daughter"
+            },
+            "id": "ecb3e334-2b9c-4540-94d3-2b6e71e64ac3"
+          }
+        ]
+      },
+      "C114C254A46B441DA2E87FBC35578B41": {
+        "chapter": "Arl of Redcliffe",
+        "choices": [
+          {
+            "label": "What was the fate of Bella the tavern waitress?",
+            "flags": {
+              "14": "Bella took tavern ownership",
+              "16": "Bella bought tavern ownership",
+              "18": "Bella left to start a brewery",
+              "default": "Bella left Redcliffe or died (If Redcliffe was destroyed, Bella died)"
+            },
+            "id": "167c7d0e-7a16-4dfa-8a62-b0e8408e8599"
+          }
+        ]
+      },
+      "5A434C9E04BA4452921B5D4346A728C1": {
+        "chapter": "Arl of Redcliffe",
+        "choices": [
+          {
+            "label": "What happened to Isolde?",
+            "flags": {
+              "2": "Isolde sacrificed herself",
+              "default": "Isolde is alive"
+            },
+            "id": "adaaf25a-9b26-4424-9df7-5bbe948031e8"
+          }
+        ]
+      },
+      "7FD7A773C53142FABAB1BEDED0BED56A": {
+        "chapter": "Urn of Sacred Ashes",
+        "choices": [
+          {
+            "label": "Did the Warden poison the Urn of Sacred Ashes?",
+            "flags": {
+              "0": "Urn poisoned",
+              "8": "Urn poisoned (UNVERIFIED)",
+              "default": "Urn not poisoned"
+            },
+            "id": "4133ab1e-1734-4895-b024-ca3f17578232"
+          }
+        ]
+      },
+      "DF5250E8C0A34857B3D96A00C74C798B": {
+        "chapter": "Denerim",
+        "choices": [
+          {
+            "label": "Did the Warden kill Ser Landry?",
+            "flags": {
+              "6": "Ser Landry killed",
+              "default": "Ser Landry alive"
+            },
+            "id": "450bd342-9007-4f51-b8c4-85263bdb3cff"
+          }
+        ]
+      },
+      "62AA9DB51BFF42C896235BB81033DEAB": {
+        "chapter": "Denerim",
+        "choices": [
+          {
+            "label": "Did the Warden tell Bann Sighard about finding Oswyn in Arl Howe's torture room?",
+            "flags": {
+              "1": "Told Bann Sighard about Oswyn",
+              "2": "Told Bann Sighard about Oswyn (No Reward)",
+              "default": "Didn't tell Bann Sighard about Oswyn"
+            },
+            "id": "28628a40-8823-4563-a924-630ce4106a47"
+          }
+        ]
+      },
+      "5840679048B84D1DB4B1EFA5C3D058F5": {
+        "chapter": "Denerim",
+        "choices": [
+          {
+            "label": "Did the Warden complete Slim Couldry's crime wave?",
+            "flags": {
+              "9": "Completed Slim Couldry's crime wave",
+              "default": "Didn't complete Slim Couldry's crime wave"
+            },
+            "id": "8fa7c352-e045-4dad-8736-d1e1407c7267"
+          }
+        ]
+      },
+      "7AD394C740504135A0D7241EA1B56D31": {
+        "chapter": "Denerim",
+        "choices": [
+          {
+            "label": "Did the Warden give Alfstanna her brother Irminric's ring?",
+            "flags": {
+              "1": "Gave Alfstanna Irminric's ring (Location given)",
+              "2": "Gave Alfstanna Irminric's ring (No location given)",
+              "default": "Didn't give Alfstanna Irminric's ring"
+            },
+            "id": "9471f575-da8d-4319-a063-cc95ffd33710"
+          }
+        ]
+      },
+      "DD064DD1BFE64C7090ABE68292229296": {
+        "chapter": "Denerim",
+        "choices": [
+          {
+            "label": "Did the Warden return the worn amulet to the beggar woman in Denerim's alienage?",
+            "flags": {
+              "1": "Returned amulet to beggar",
+              "default": "Didn't return amulet to beggar"
+            },
+            "id": "ee2f9e46-8a44-4a2f-893b-0816820cbce4"
+          }
+        ]
+      },
+      "C2935B1B9E60470EAAEF083B012839AE": {
+        "chapter": "Denerim",
+        "choices": [
+          {
+            "label": "Did the Warden help Alistair track down his half-sister Goldanna?",
+            "flags": {
+              "12": "Helped Alistair find Goldanna",
+              "16": "Did not help Alistair find Goldanna",
+              "default": "Did not encounter Goldanna"
+            },
+            "id": "6b6724df-c3ac-47d0-9e38-c97db0d14090"
+          }
+        ]
+      },
+      "51ECED21579443BD95DEF73AF5BBB9C4": {
+        "chapter": "Denerim",
+        "choices": [
+          {
+            "label": "Did the Warden bring the ancient encrypted scroll to Sister Justine in Denerim?",
+            "flags": {
+              "6": "Brought scroll to Sister Justine",
+              "default": "Didn't bring scroll to Sister Justine"
+            },
+            "id": "88b2c6c2-1ef2-415d-8ff4-583072e9b325"
+          }
+        ]
+      },
+      "5C301313E4424E56BF1F3C08B065084C": {
+        "chapter": "Denerim",
+        "choices": [
+          {
+            "label": "Did the Warden help Sergeant Kylon clear the White Falcons out of the Pearl?",
+            "flags": {
+              "5": "Helped clear customers out of Pearl",
+              "8": "Helped clear customers out of Pearl (UNVERIFIED)",
+              "default": "Didn't help clear customers out of Pearl"
+            },
+            "id": "53c57aa3-d8a3-4eac-bab7-4abadfb02e8d"
+          }
+        ]
+      },
+      "1486DD45DAED4876B1DEDB749D8E8791": {
+        "chapter": "Denerim",
+        "choices": [
+          {
+            "label": "Did the Warden handle the Crimson Oars for Sergeant Kylon in Denerim?",
+            "flags": {
+              "1": "Handled the Crimson Oars",
+              "default": "Didn't handle the Crimson Oars"
+            },
+            "id": "94a30aae-f57b-4bc9-9dc5-2a205d0599c9"
+          }
+        ]
+      },
+      "C9913BA344A14BF992EA905B2E8D7930": {
+        "chapter": "Denerim",
+        "choices": [
+          {
+            "label": "Did the Warden complete Master Ignacio's assassination missions?",
+            "flags": {
+              "1": "Completed Master Ignacio's assassinations (Unless warden killed Master Ignacio)",
+              "default": "Didn't complete Master Ignacio's assassinations"
+            },
+            "id": "f3751257-a1d8-4aed-8b1d-07da16c77192"
+          }
+        ]
+      },
+      "9AE0BECCF5194FBEA1F70D8BD0B144BA": {
+        "chapter": "Denerim",
+        "choices": [
+          {
+            "label": "Did the Warden kill Master Ignacio?",
+            "flags": {
+              "17": "Warden killed Master Ignacio",
+              "default": "Warden didn't kill Master Ignacio"
+            },
+            "id": "535ac1e3-1df8-411b-b63c-28f77b195630"
+          }
+        ]
+      },
+      "919B6591AA754F5E8B871766F25A68AB": {
+        "chapter": "Denerim",
+        "choices": [
+          {
+            "label": "Did Leliana have Marjolaine killed or let her go?",
+            "flags": {
+              "10": "Had Marjolaine killed",
+              "31": "Sent Marjolaine away",
+              "default": "Did not encounter Marjolaine"
+            },
+            "id": "001af112-2d09-41af-bf4e-36899837b335"
+          }
+        ]
+      },
+      "841A4E6E0CDD43D3BA3BA484D9A2771F": {
+        "chapter": "The Landsmeet",
+        "choices": [
+          {
+            "label": "Who now rules Ferelden?",
+            "flags": {
+              "1": "Alistair rules (unless dead, in which case Anora rules)",
+              "3": "Alistair & Anora rule (unless Alistair is dead, in which case Anora rules)",
+              "4": "Anora rules",
+              "5": "Anora & the Warden rule",
+              "56": "Alistair & the Warden rule",
+              "default": "Invalid choice. Not handled: (16) Alistair leaves forever"
+            },
+            "id": "439bd944-176e-4439-b019-ceaeb0003efb"
+          },
+          {
+            "label": "Who killed Loghain?",
+            "flags": {
+              "17": "Alistair killed Loghain",
+              "default": "Warden executed loghain"
+            },
+            "id": "79f732b4-e93a-44f0-b24e-41d8aa76f9f9"
+          }
+        ]
+      },
+      "2F247F5F5B1C41F7845E3D09F20D5144": {
+        "chapter": "Soldier's Peak",
+        "choices": [
+          {
+            "id": "7e4aaaf5-30ae-491d-bf1e-54a535a2afd1"
+          }
+        ]
+      },
+      "14D501EF13CE49559111ED9DC9C44457": {
+        "chapter": "Soldier's Peak",
+        "choices": [
+          {
+            "label": "How did the Warden deal with Avernus?",
+            "flags": {
+              "3": "Avernus continued with ethical research",
+              "5": "Avernus continued with research",
+              "20": "Avernus was killed",
+              "default": "Flag for Avernus' faith was not set"
+            },
+            "id": "a1b0a4ba-7f9d-4ec4-8cf8-04732e88ec0b"
+          }
+        ]
+      },
+      "220B96C20A004539812763C4DE5D6C23": {
+        "chapter": "Soldier's Peak",
+        "choices": [
+          {
+            "label": "How did the Warden deal with Sophia?",
+            "flags": {
+              "20": "Sophia was killed",
+              "default": "Sophia alive"
+            },
+            "id": "2884a975-cb67-480d-91ca-f258bd04da20"
+          }
+        ]
+      },
+      "0802E25F3C1144A5B59109F27AAE6CA7": {
+        "chapter": "Soldier's Peak",
+        "choices": [
+          {
+            "label": "Did the Warden drink Avernus' alchemical concoction?",
+            "flags": {
+              "0": "Gained Power of Blood",
+              "1": "Didn't drink concoction",
+              "default": "Flag for this choice was not set"
+            },
+            "id": "c6ae7d1a-1995-4a16-88c7-7e1a82dd634d"
+          }
+        ]
+      },
+      "A8211E73A50347D9B72448F24648064C": {
+        "chapter": "The Stone Prisoner",
+        "choices": [
+          {
+            "label": "What was the fate of Kitty and Amalia?",
+            "flags": {
+              "0": "Amalia is alive, Matthias is dead",
+              "24": "Matthias and Amalia both alive, neither possessed",
+              "25": "Matthias and Amalia both alive, Amalia possessed",
+              "26": "Amalia is dead, Matthias is alive",
+              "27": "Matthias and Amalia both alive, Matthias possessed",
+              "default": "Quest flag not set"
+            },
+            "id": "58eba51b-96a2-4135-949c-832d3891d4ac"
+          }
+        ]
+      },
+      "45CE5838602B431F96EF7B65D005D2C1": {
+        "chapter": "The Stone Prisoner",
+        "choices": []
+      },
+      "D6BFE3A3A66E4BEF940DB167A634CD6B": {
+        "chapter": "The Stone Prisoner",
+        "choices": [
+          {
+            "label": "What happened to Shale?",
+            "flags": {
+              "9": "Shale died when the Warden sided with Branka",
+              "default": "Shale alive & well"
+            },
+            "id": "e1099820-9d58-4241-a628-b95e6f83a39f"
+          }
+        ]
+      },
+      "5BE5FB37A9AB4219BC8380D54E0B7742": {
+        "chapter": "Awakening",
+        "choices": [
+          {
+            "label": "What happened to the Architect?",
+            "flags": {
+              "4": "Warden killed the Architect",
+              "5": "Warden allowed Architect to live",
+              "default": "Quest flag not set"
+            },
+            "id": "2521abcd-4072-4395-8e4f-836ace723c2a"
+          }
+        ]
+      },
+      "5BEE8FEFF2AC44788A13AD590C96E67A": {
+        "chapter": "Awakening",
+        "choices": [
+          {
+            "label": "What happened to Nathaniel?",
+            "flags": {
+              "5": "Nathaniel was hanged",
+              "12": "Nathaniel died during the Keep's siege",
+              "default": "Nathaniel alive & well"
+            },
+            "id": "9374c675-a6d6-4daa-a999-1b7f7ca6dc17"
+          }
+        ]
+      },
+      "6F08DC1CF4984FF699D7DC3CAD18B753": {
+        "chapter": "Awakening",
+        "choices": [
+          {
+            "label": "Did Oghren re-unite with his child and Felsi?",
+            "exclude": true,
+            "flags": {
+              "8": "The Warden did not help",
+              "9": "Oghren and Felsi parted on bad terms",
+              "10": "Oghren and Felsi reunited",
+              "default": "The Keep was protected"
+            },
+            "id": "42b26fe9-d70d-4d80-a5d0-f50807ba22f9"
+          }
+        ]
+      },
+      "923E283E44DB4F48BA557085F77D1152": {
+        "chapter": "Awakening",
+        "choices": [
+          {
+            "label": "Did the Warden protect Vigil's Keep?",
+            "flags": {
+              "8": "The Keep was lost",
+              "default": "The Keep was protected"
+            },
+            "id": "c3e0abe0-ec0d-4127-973f-061e1dfca4c0"
+          }
+        ]
+      },
+      "1C7395DEAAC14F889A5D41F86854F48B": {
+        "chapter": "Awakening",
+        "choices": [
+          {
+            "label": "Did the Warden protect the city of Amaranthine?",
+            "flags": {
+              "7": "The city of Amaranthine was protected",
+              "default": "The city of Amaranthine was lost"
+            },
+            "id": "cb6dec0f-d8d6-471c-9e1e-5015cb34810f"
+          }
+        ]
+      },
+      "731EAE9148E94CE3B80B903A24C46E4A": {
+        "chapter": "Witch Hunt",
+        "choices": [
+          {
+            "label": "Did the Warden go through the eluvian with Morrigan?",
+            "flags": {
+              "1": "Went through the eluvian",
+              "2": "Warden stabbed Morrigan",
+              "default": "Didn't go through the eluvian"
+            },
+            "id": "7e872d06-be6d-49f5-8a2b-fa6e545a97ca"
+          }
+        ]
+      },
+      "25BC6F5E8DA847938245071233433332": {
+        "chapter": "Companions",
+        "choices": [
+          {
+            "label": "Did the Warden recruit Alistair?",
+            "flags": {
+              "0": "Recruited",
+              "default": "Not recruited"
+            },
+            "id": "2fbef895-835a-4e6e-b125-fb121edc3ddf"
+          },
+          {
+            "label": "Did the Warden recruit Dog?",
+            "flags": {
+              "1": "Recruited",
+              "default": "Not recruited"
+            },
+            "id": "90383945-3f67-45d5-9a49-600a7863a711"
+          },
+          {
+            "label": "Did the Warden recruit Leliana?",
+            "flags": {
+              "4": "Recruited",
+              "default": "Not recruited"
+            },
+            "id": "083fb826-59f6-4060-9909-32df9aaa43c1"
+          },
+          {
+            "label": "Did the Warden recruit Morrigan?",
+            "flags": {
+              "5": "Recruited",
+              "default": "Not recruited"
+            },
+            "id": "339006a1-57a6-4198-8543-00b2fa84ee49"
+          },
+          {
+            "label": "Did the Warden recruit Oghren?",
+            "flags": {
+              "6": "Recruited",
+              "default": "Not recruited"
+            },
+            "id": "b0bfc958-1044-490c-bbfa-1f3c593fcf2e"
+          },
+          {
+            "label": "Did the Warden recruit Shale?",
+            "flags": {
+              "7": "Recruited",
+              "default": "Not recruited"
+            },
+            "id": "4019e58a-1195-4fe3-bda5-b70cd2b7f4f7"
+          },
+          {
+            "label": "Did the Warden recruit Wynne?",
+            "flags": {
+              "8": "Recruited",
+              "default": "Not recruited"
+            },
+            "id": "5766d3a1-c53b-47c6-9c38-62c46b2f77ec"
+          },
+          {
+            "label": "Did the Warden recruit Zevran?",
+            "flags": {
+              "9": "Recruited",
+              "default": "Not recruited"
+            },
+            "id": "73754399-0c3c-44b8-882c-6abcf9553478"
+          },
+          {
+            "label": "Did the Warden recruit Loghain?",
+            "flags": {
+              "10": "Recruited",
+              "default": "Not recruited"
+            },
+            "id": "8ddb4dcd-8852-4717-94b0-cd3de23aba6d"
+          },
+          {
+            "label": "Did the Warden recruit Sten?",
+            "flags": {
+              "13": "Recruited",
+              "default": "Not recruited"
+            },
+            "id": "a5c6d744-c895-48a9-b94c-9ceef6068f1c"
+          }
+        ]
+      },
+      "840C666EA1FE48CBA260AB1FE42FCFA7": {
+        "chapter": "Companions",
+        "choices": [
+          {
+            "label": "What is the Warden's romantic status with Alistair?",
+            "flags": {
+              "13": "Dumped",
+              "21": "Active",
+              "27": "Cut off",
+              "default": "Friendship"
+            },
+            "id": "c2545895-8185-4f30-be18-d4bfbe1d42b5"
+          }
+        ]
+      },
+      "E8E833AC06C04BF2A3261A7937542D75": {
+        "chapter": "Companions",
+        "choices": [
+          {
+            "label": "What is the Warden's romantic status with Morrigan?",
+            "flags": {
+              "13": "Dumped",
+              "21": "Active",
+              "27": "Cut off",
+              "default": "Friendship"
+            },
+            "id": "25b133cc-2b99-4787-8f9a-45d2d9d41e8e"
+          }
+        ]
+      },
+      "E8CEBFA6EB2345EBB704DF06D794C803": {
+        "chapter": "Companions",
+        "choices": [
+          {
+            "label": "What is the Warden's romantic status with Leliana?",
+            "flags": {
+              "13": "Dumped",
+              "21": "Active",
+              "27": "Cut off",
+              "default": "Friendship"
+            },
+            "id": "7bdc02c2-f97d-4339-9ef1-20dbfa5a0a38"
+          }
+        ]
+      },
+      "68F1B23EB3EA42F5B363ABE7FEB86A50": {
+        "chapter": "Companions",
+        "choices": [
+          {
+            "label": "What is the Warden's romantic status with Zevran?",
+            "flags": {
+              "13": "Dumped",
+              "21": "Active",
+              "27": "Cut off",
+              "default": "Friendship"
+            },
+            "id": "108071cc-b210-4f3e-82da-a0709ebb9d32"
+          }
+        ]
+      },
+      "764C8DAFF2274DFEBC7C7B32FA2BB0CD": {
+        "chapter": "Companions",
+        "choices": [
+          {
+            "label": "Did Morrigan have a baby?",
+            "flags": {
+              "2": "Morrigan had an old god baby with Alistair",
+              "4": "Morrigan had an old god baby with the Warden",
+              "12": "Morrigan had an old god baby with Loghain",
+              "default": "Morrigan did not have an old god baby"
+            },
+            "id": "171613c9-4110-433e-b9cc-53c3a8bf0625"
+          }
+        ]
+      },
+      "6C3BF26236154969AF21F87C89944925": {
+        "chapter": "Companions",
+        "choices": [
+          {
+            "label": "DOG_MAIN",
+            "exclude": true,
+            "flags": {
+              "default": "NOT_SUPPORTED"
+            },
+            "id": "41252de2-9866-4649-91c2-cfe8d13312f3"
+          }
+        ]
+      },
+      "2B9F3A9F5D024CA794874529BDC6F9B0": {
+        "chapter": "Companions",
+        "choices": [
+          {
+            "label": "What did the Warden do about Sten's imprisonment in Lothering?",
+            "flags": {
+              "0": {
+                "7": "Retrieved key to free sten",
+                "default": "Picked lock to free Sten"
+              },
+              "default": "Didn't free Sten"
+            },
+            "id": "cf70615d-71e5-4ad3-89dc-908fa30e8b17"
+          }
+        ]
+      },
+      "FD98290AFDD34B89B50F8A0404BC9E6E": {
+        "chapter": "Companions",
+        "choices": [
+          {
+            "label": "Did the Warden Intimidate or Persuade the Revered Mother to free Sten? (Only applies if Sten was freed)",
+            "flags": {
+              "0": "Intimidated Revered Mother to free Sten",
+              "default": "Persuaded Revered Mother to free Sten"
+            },
+            "id": "55d8fe41-982e-4338-91ee-603262bb9fd7"
+          }
+        ]
+      },
+      "AF48E71C721A4240B4E1FF4FB592C99F": {
+        "chapter": "Companions",
+        "choices": [
+          {
+            "label": "Did the Warden return Sten's sword to him?",
+            "flags": {
+              "13": "Returned Sten's sword",
+              "default": "Didn't return Sten's sword"
+            },
+            "id": "c8f731e9-2bfa-4e80-90af-bc68a33e88c9"
+          }
+        ]
+      },
+      "530C45E15B4548A5A41DEC739E1F2B2D": {
+        "chapter": "Companions",
+        "choices": [
+          {
+            "label": "CHARACTER_OGHREN",
+            "exclude": true,
+            "flags": {
+              "default": "NOT_SUPPORTED"
+            },
+            "id": "410fe383-4dfb-4dc1-8d27-0d554f4c77b5"
+          }
+        ]
+      },
+      "1763DEA8045E4B1F911B44E51CA314D1": {
+        "chapter": "Companions",
+        "choices": [
+          {
+            "label": "What happened to Zevran?",
+            "flags": {
+              "20": "Zevran died",
+              "34": "Zevran died",
+              "default": "Zevran alive & well"
+            },
+            "id": "040b6411-ce76-4f2a-aeca-ae2f1520c4bd"
+          }
+        ]
+      },
+      "70EF42CA62564177AA810FCD09C7AFD4": {
+        "chapter": "Companions",
+        "choices": [
+          {
+            "label": "Did the Warden find Flemeth's grimoire for Morrigan?",
+            "flags": {
+              "1": {
+                "7": "Acquired grimoire by defeating Flemeth",
+                "default": "Acquired grimoire peacefully"
+              },
+              "default": "Did not acquire grimoire"
+            },
+            "id": "f7c89a57-b00c-4db1-8ded-45959d3c1a37"
+          }
+        ]
+      },
+      "A5FA53EF3C24463693440319F1D564B2": {
+        "chapter": "Battle of Denerim",
+        "choices": [
+          {
+            "label": "Who killed the archdemon?",
+            "flags": {
+              "2": "Alistair killed Archdemon",
+              "3": "Alistair killed Archdemon (and kissed Warden)",
+              "4": "Warden killed Archdemon",
+              "5": "Loghain killed Archdemon",
+              "default": "Warden killed Archdemon"
+            },
+            "id": "8537dce1-56f7-421a-a502-fcbf7dacaf63"
+          }
+        ]
+      }
+    }
+  }
+}
