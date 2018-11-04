@@ -22,7 +22,7 @@
     "eslint-plugin-react": "^7.11.1"
   },
   "scripts": {
-    "postinstall": "CONTENT=`cat node_modules/paralleljs/package.json` && echo ${CONTENT:1} > node_modules/paralleljs/package.json",
+    "postinstall": "./scripts/postinstall.sh",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
