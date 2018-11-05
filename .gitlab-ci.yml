@@ -39,7 +39,7 @@ pages:
   - docker:dind
 
   stage: deploy
-  
+
   script:
     - mkdir -p public
     - cp -rf build/* public
@@ -50,5 +50,6 @@ pages:
       - public
 
   only:
+    - 2-migrate-backend
     - 1-integrate-ci-cd
     - tags
