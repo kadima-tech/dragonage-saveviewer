@@ -2,6 +2,7 @@ variables:
   CI: "true"
   DOCKER_HOST: tcp://docker:2375/
   GIT_SUBMODULE_STRATEGY: recursive
+  PUBLIC_URL: https://dzd-hosting.gitlab.io/dragonage-saveviewer/
 
 services:
 - docker:dind

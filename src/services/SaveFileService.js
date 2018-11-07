@@ -82,7 +82,7 @@ class SaveFileService {
       const guid = `${quest[config.guids.plot_guid].value}`.replace(/\0+$/, "");
 
       // Fetch the quest flags
-      const questFlags = config.guids.plot_flags.map(plot_flag => quest[plot_flag].value);
+      const questFlags = [...config.guids.plot_flags];
       const sideQuests = config.quests;
 
       // Add further side quest choices to the list in case there are any
