@@ -82,15 +82,17 @@ class SaveFileService {
       const guid = `${quest[config.guids.plot_guid].value}`.replace(/\0+$/, "");
 
       // Fetch the quest flags
-      const questFlags = [...config.guids.plot_flags];
+      const questFlags = config.guids.plot_flags.map(flag => quest[flag].value);
       const sideQuests = config.quests;
+
 
       // Add further side quest choices to the list in case there are any
       if (sideQuests[guid]) {
+
         const sideQuest = sideQuests[guid];
         const { chapter } = sideQuest;
 
-        const results = sideQuest.choices
+        const output = sideQuest.choices
             .filter(sideQuest => !sideQuest.exclude)
             .map(sideQuest => ({ choice: this._getChoice(questFlags, sideQuest), sideQuest }))
             .filter(({choice}) => choice && choice.length > 0)
@@ -101,7 +103,7 @@ class SaveFileService {
               note: sideQuest.note,
             }));
 
-        return [...choices, ...results];
+        return [...choices, ...output];
       }
 
       // Retain the previous choices list
@@ -116,13 +118,17 @@ class SaveFileService {
       return null;
     }
 
-    for (const {flag, choice_str} in side_quest.flags) {
-      if (typeof(choice_str) === 'object' && this._hasFlag(plot,flag))
-        return this._getChoice(plot, choice_str);
-      else if (this._hasFlag(plot,flag))
-        return choice_str;
-    }
+    if (side_quest.flags) {
+      const flags = Object.keys(side_quest.flags);
 
+      for (const flag of flags) {
+        const choice_str = side_quest.flags[flag];
+        if (typeof(choice_str) === 'object' && this._hasFlag(plot,flag))
+          return this._getChoice(plot, choice_str);
+        else if (this._hasFlag(plot,flag))
+          return choice_str;
+      }
+    }
     return side_quest.flags ? side_quest.flags.default : null;
   }
 
