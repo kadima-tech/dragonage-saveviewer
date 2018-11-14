@@ -51,6 +51,5 @@ pages:
       - public
 
   only:
-    - 2-migrate-backend
-    - 1-integrate-ci-cd
+    - 3-cleanup
     - tags
