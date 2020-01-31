@@ -1,3 +1,4 @@
+/* eslint-disable */
 /**
  * byte-buffer v1.0.3
  * Copyright (c) 2012-2014 Tim Kurvers <tim@moonsphere.net>

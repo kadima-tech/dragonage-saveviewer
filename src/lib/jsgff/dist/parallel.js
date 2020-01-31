@@ -1,4 +1,5 @@
-﻿(function () {
+/* eslint-disable */
+(function () {
 	var isCommonJS = typeof module !== 'undefined' && module.exports;
 	var isNode = !(typeof window !== 'undefined' && this === window);
 	var setImmediate = setImmediate || function (cb) {
@@ -88,7 +89,7 @@
 
 	// static method
 	Parallel.isSupported=function(){ return _supports; }
-	
+
 	Parallel.prototype.getWorkerSource = function (cb, env) {
 		var that = this;
 		var preStr = '';

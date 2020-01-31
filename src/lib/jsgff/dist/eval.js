@@ -1,3 +1,4 @@
+/* eslint-disable */
 var isNode = typeof module !== 'undefined' && module.exports;
 
 if (isNode) {

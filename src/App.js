@@ -7,7 +7,6 @@ import { Home } from './views/home/Home';
 import { Loading } from './views/loading/Loading';
 import { Results } from './views/results/Results';
 
-import logo from './logo.svg';
 import './App.css';
 
 const Body = styled.div`
