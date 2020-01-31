@@ -1,3 +1,4 @@
+/* eslint-disable */
 /*
     jsGFF - A GFF reader written in Javascript
     Copyright (C) 2014 Jacobus Meulen
@@ -38,7 +39,7 @@
     str ="HeaderField(label={label}, type={type}, is_list={is_list}, is_struct={is_struct}, is_reference={is_reference}, offset={offset})"
     str =str.replace("{label}",json.label).replace("{type}",json.type).replace("{is_list}",json.is_list).replace("{is_struct}",json.is_struct).replace("{is_reference}",json.is_reference).replace("{offset}",json.offset)
     console.log str.replace(/true/g,'True').replace(/false/g,'False')
-  
+
   fldTypePrint = (kind) ->
     if !!kind.fourcc
       console.log "Struct" + kind.fourcc
@@ -101,7 +102,7 @@
       var self;
       console.log(f);
       self = this;
-      
+
         var s, string, strings, _j, _len1, cache, bigendian, complete, data_offset, e, header, i, parse_string, read_field, read_generic, read_list, read_reference, read_struct, read_value, s, stringcache, struct, use_cstring, version, _i, _len;
         f.front();
         header = self._read_header(f);
@@ -345,7 +346,7 @@
               value: datatypeObj.unpack(bigendian, f.read(datatypeObj.size))
             };
             } catch (e) {
-              // Handle UINT64 a little differently - just store the bytes, deal with 
+              // Handle UINT64 a little differently - just store the bytes, deal with
               // the actual data later on the server
               if(datatypeObj.name == 'UINT64')
                 return {

@@ -1,3 +1,4 @@
+/* eslint-disable */
 /*
     jsGFF - A GFF reader written in Javascript
     Copyright (C) 2014 Jacobus Meulen
