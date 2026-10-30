@@ -1,0 +1,632 @@
+{
+  "default": {
+    "guids": {
+      "party_list": 16003,
+      "plot_manager": 16400,
+      "plot_list": 16401,
+      "plot_guid": 16402,
+      "plot_flags": [
+        16403,
+        16404,
+        16405,
+        16406
+      ]
+    },
+    "quests": {
+      "6C4AE568B153458F951EFAEDED73CEFE": {
+        "chapter": "Prologue",
+        "choices": [
+          {
+            "label": "Did Hawke join the mercenaries or the smugglers?",
+            "flags": {
+              "7": "Joined mercenaries",
+              "12": "Joined mercenaries",
+              "default": "Joined smugglers"
+            },
+            "id": "c2bb7bcd-b455-4cd8-ad01-d62b11de6a3c"
+          },
+          {
+            "chapter": "Act 2",
+            "label": "Did Hawke kill the Arishok? [**]",
+            "verify": "C930F422EBC743F59CEDFAADC7E8FD35",
+            "flags": {
+              "29": "Killed Arishok",
+              "default": "Didn't kill Arishok"
+            },
+            "id": "f2a4dc84-087a-45c4-a1b1-b3900e06e91a"
+          },
+          {
+            "chapter": "Companions",
+            "label": "Did Hawke give Isabela to the Arishok?",
+            "flags": {
+              "29": "Didn't give Isabela to the Arishok",
+              "default": "Gave Isabela to the Arishok"
+            },
+            "id": "804ba7a1-0e8e-4874-a074-4b24aed58d1c"
+          },
+          {
+            "chapter": "Act 3",
+            "label": "Did Hawke kill the dragon in the Bone pit?",
+            "flags": {
+              "34": "Killed the dragon",
+              "default": "Didn't kill the dragon"
+            },
+            "id": "a12cdce8-08ae-4de3-ac92-4c0722980d1e"
+          }
+        ]
+      },
+      "1AF3A8CCAA954EBFAE607B611080716E": {
+        "chapter": "Act 1",
+        "choices": [
+          {
+            "label": "Did Hawke blackmail Ser Thrask? [**]",
+            "verify": "FA936F2069D747E28EC0777AEE653893",
+            "flags": {
+              "1": "Blackmailed Ser Thrask",
+              "2": "Didn't blackmail Ser Thrask",
+              "default": "Didn't find the letter"
+            },
+            "id": "a166c034-faa6-4128-a4c8-30fd916193e7"
+          }
+        ]
+      },
+      "FA936F2069D747E28EC0777AEE653893": {
+        "chapter": "Act 1",
+        "choices": [
+          {
+            "label": "Did Hawke send Feynriel to the Circle or to the Dalish?",
+            "flags": {
+              "3": "Sent Feynriel to the Circle",
+              "4": "Sent Feynriel to the Dalish",
+              "default": "Invalid"
+            },
+            "id": "804b8273-778a-49cd-9e78-e168b3cf8ddb"
+          },
+          {
+            "label": "[VERIFY_B] Did Hawke blackmail Ser Thrask?",
+            "verify": "1AF3A8CCAA954EBFAE607B611080716E",
+            "flags": {
+              "37": "Didn't blackmail Ser Thrask",
+              "38": "Blackmailed Ser Thrask",
+              "default": "Didn't find the letter"
+            },
+            "id": "df44ed3f-b318-48c9-aa62-ab9fa05524cc"
+          },
+          {
+            "label": "Did Hawke kill Danzig?",
+            "flags": {
+              "30": "Danzig alive & well",
+              "default": "Danzig killed"
+            },
+            "id": "d0ad1869-3319-4a97-8bc0-2132a7c750a6"
+          }
+        ]
+      },
+      "307D3D65906448C5BAD9059B13C6D3DE": {
+        "chapter": "Act 1",
+        "choices": [
+          {
+            "label": "What did Hawke do with the Templars?",
+            "flags": {
+              "8": "Turned mages over to templars",
+              "12": "Convinced templars to leave",
+              "14": "Fought against templars",
+              "15": "Turned mages over to templars",
+              "18": "Convinced templars to leave",
+              "19": "Convinced templars to leave",
+              "25": "Fought against templars",
+              "default": "Invalid choice"
+            },
+            "id": "fbcb4b1c-5981-4799-9882-dbba5a80c9ac"
+          },
+          {
+            "label": "Was Karras killed?",
+            "flags": {
+              "8": "Karras alive & well",
+              "12": "Karras alive & well",
+              "14": "Karras killed",
+              "15": "Karras alive & well",
+              "18": "Karras alive & well",
+              "19": "Karras alive & well",
+              "25": "Karras killed",
+              "default": "Invalid choice"
+            },
+            "id": "cff5e04d-8b0b-4e39-b767-4264b51f9181"
+          }
+        ]
+      },
+      "2BA51902E8F143A58412395C89C22E98": {
+        "chapter": "Act 1",
+        "choices": [
+          {
+            "label": "Did Hawke find the miners who'd gone missing from the bone pit? [**]",
+            "verify": "149412DC778141208EE762BB7B154EED",
+            "flags": {
+              "10": "Solved mystery of missing miners",
+              "14": "Solved mystery of missing miners",
+              "20": "Solved mystery of missing miners",
+              "default": "Didn't solve mystery of missing miners"
+            },
+            "id": "5bc8ce99-9f0e-4f7d-ae13-3e43e69cfd5b"
+          }
+        ]
+      },
+      "149412DC778141208EE762BB7B154EED": {
+        "chapter": "Act 1",
+        "choices": [
+          {
+            "label": "Did Hawke find the miners who'd gone missing from the bone pit? [**]",
+            "verify": "2BA51902E8F143A58412395C89C22E98",
+            "flags": {
+              "2": "Solved mystery of missing miners",
+              "3": "Solved mystery of missing miners",
+              "6": "Solved mystery of missing miners",
+              "default": "Didn't solve mystery of missing miners"
+            },
+            "id": "909f6c56-53ba-4591-8c3e-bc3ca3d1c412"
+          }
+        ]
+      },
+      "F7AA5248354041CDBD95A799D121F623": {
+        "chapter": "Act 1",
+        "verify": "2BA51902E8F143A58412395C89C22E98",
+        "choices": [
+          {
+            "label": "Was Kelder killed?",
+            "flags": {
+              "0": "Kelder killed",
+              "1": "Kelder alive & well",
+              "default": "Invalid"
+            },
+            "id": "ead448d6-2577-41c6-9856-9826a2de7667"
+          }
+        ]
+      },
+      "E717D8BA4554486C9E9604988A64F72C": {
+        "chapter": "Act 1",
+        "choices": [
+          {
+            "label": "Is Ginnis alive?",
+            "flags": {
+              "0": "Ginnis killed",
+              "20": "Ginnis killed",
+              "25": "Ginnis killed",
+              "default": "Ginnis alive & well"
+            },
+            "id": "1f1cfaec-4ef6-41c1-9fcb-54a078b1e6ec"
+          },
+          {
+            "label": "Did Hawke return Saemus safely to the viscount?",
+            "flags": {
+              "0": "Returned Saemus to the viscount",
+              "20": "Returned Saemus to the viscount",
+              "25": "Returned Saemus to the viscount",
+              "default": "Didn't return Saemus to the viscount"
+            },
+            "id": "ea7beab2-cb28-44c2-bab8-def241ab4499"
+          }
+        ]
+      },
+      "499CFA8AA97D49E28B7833C52525610B": {
+        "chapter": "Act 1",
+        "choices": [
+          {
+            "label": "Did Hawke defend Ketojan or hand him over to the Qunari?",
+            "flags": {
+              "7": "Defended Ketojan from the Qunari",
+              "8": "Handed Ketojan over to the Qunari",
+              "16": "Defended Ketojan from the Qunari",
+              "17": "Handed Ketojan over to the Qunari",
+              "21": "Defended Ketojan from the Qunari",
+              "26": "Handed Ketojan over to the Qunari",
+              "default": "Invalid Choice"
+            },
+            "id": "2baf9e3a-0bb9-4987-9bd3-f90567e09e00"
+          }
+        ]
+      },
+      "AFA5F4DE32A04BFEAE8AC1E282085042": {
+        "chapter": "Act 1",
+        "choices": [
+          {
+            "label": "Did Hawke tell Ghyslain the truth about his wife's death?",
+            "note": "No plot flags are available to distinguish between wether Hawke told the truth or lied.",
+            "flags": {
+              "7": "<Told> Ghyslain about his wife's death",
+              "default": "Didn't look for Ghyslain's wife"
+            },
+            "id": "c5990084-c39e-4bea-9dcc-a9d74b766b75"
+          }
+        ]
+      },
+      "C9A765ECB10B4405BBB32F0DB2B95F16": {
+        "chapter": "Act 1",
+        "choices": [
+          {
+            "label": "What happened to Keran?",
+            "flags": {
+              "15": "Keran reinstated with templars",
+              "16": "Keran kicked out of templars",
+              "default": "Invalid Choice"
+            },
+            "id": "7fadcce8-d765-4cd4-a518-b13ea2366293"
+          }
+        ]
+      },
+      "E8991262E9304DEDAFF763B6D42B83D2": {
+        "chapter": "Act 1",
+        "choices": [
+          {
+            "label": "Did Hawke return the cargo to Martin?",
+            "flags": {
+              "1": "Returned the cargo to Martin",
+              "19": "Returned the cargo to Martin",
+              "default": "Didn't return the cargo to Martin"
+            },
+            "id": "36788786-8a57-4768-afef-77d3dbca9c42"
+          }
+        ]
+      },
+      "01B66793B8F44AF791B758D4723D26E7": {
+        "chapter": "Act 2",
+        "choices": [
+          {
+            "label": "How did Hawke help Yevhen find his sons in the deep roads?",
+            "flags": {
+              "5": "Saved Merin",
+              "6": "Saved Iwan",
+              "7": "Saved Merin",
+              "8": "Saved Iwan",
+              "12": "Saved Iwan",
+              "13": "Saved Merin",
+              "18": "Saved Iwan",
+              "default": "Didn't encounter Yevhen"
+            },
+            "id": "d8ee4bbc-49c2-4413-b1ad-9b186d3edd43"
+          }
+        ]
+      },
+      "1831240234E24ECC88C5163837BBC0D6": {
+        "chapter": "Act 2",
+        "choices": [
+          {
+            "label": "What happened to Feynriel?",
+            "flags": {
+              "8": "Feynriel made tranquil",
+              "16": "Feynriel made tranquil",
+              "57": "Feynriel possessed",
+              "default": "Feynriel freed & left for Tevinter"
+            },
+            "id": "2d5846fe-e20a-4df8-b2a6-cee397d454b7"
+          }
+        ]
+      },
+      "4C70E236B3564CE5AD93C4F0046B4752": {
+        "chapter": "Act 2",
+        "choices": [
+          {
+            "label": "Did Hawke kill Gascard?",
+            "flags": {
+              "11": "Killed Gascard",
+              "default": "Didn't kill Gascard"
+            },
+            "id": "d897b6de-2f08-4131-b44e-72bb8548f76d"
+          }
+        ]
+      },
+      "8EACA8B728DB4BE58B540A8D34DD8C11": {
+        "chapter": "Act 2",
+        "choices": [
+          {
+            "label": "Did Hawke discover who was raiding Hubert's caravans?",
+            "flags": {
+              "8": "Discovered looter of Hubert's caravans",
+              "default": "Didn't discover looter of Hubert's caravans"
+            },
+            "id": "dc25e230-7b20-479a-9579-447daf2de2be"
+          }
+        ]
+      },
+      "2D7ABC9F51FD42BA9453871B55CA147D": {
+        "chapter": "Act 2",
+        "choices": [
+          {
+            "label": "Did Javaris die?",
+            "flags": {
+              "16": "Javaris died",
+              "default": "Javaris alive & well"
+            },
+            "id": "07689cce-62a4-4f8a-a41b-064a4b687b8b"
+          }
+        ]
+      },
+      "E14DD35864954D84824562465A0A57CE": {
+        "chapter": "Act 2",
+        "choices": [
+          {
+            "label": "Did Hawke side with Varnell against the Qunari? [**]",
+            "flags": {
+              "32": "Sided with Varnell against the Qunari",
+              "default": "Sided with Petrice"
+            },
+            "id": "4db86fe9-ddd2-4161-b05f-1c0ea95d8189"
+          }
+        ]
+      },
+      "A3A9A6C9214E465E9A638E277729261E": {
+        "chapter": "Act 2",
+        "choices": [
+          {
+            "label": "Did Hawke side with Varnell against the Qunari? [**]",
+            "flags": {
+              "0": "Sided with Petrice",
+              "default": "Sided with Varnell against the Qunari"
+            },
+            "id": "0138a2b2-4fbd-400d-9d76-50dbeae944ec"
+          }
+        ]
+      },
+      "C930F422EBC743F59CEDFAADC7E8FD35": {
+        "chapter": "Act 2",
+        "choices": [
+          {
+            "label": "Did Hawke kill the Arishok? [**]",
+            "verify": "6C4AE568B153458F951EFAEDED73CEFE",
+            "flags": {
+              "30": "Didn't kill Arishok",
+              "37": "Didn't kill Arishok",
+              "default": "Killed Arishok"
+            },
+            "id": "55a405df-de38-433a-bab3-29ad20e6f5f6"
+          }
+        ]
+      },
+      "6F4E853DF7EE4DE3841C31928BF663C3": {
+        "chapter": "Act 3",
+        "choices": [
+          {
+            "label": "Did Hawke try to find the assassin for Nuncio?",
+            "flags": {
+              "1": "Hawke offered to help Nuncio",
+              "2": "Didn't help Nuncio find the assassin",
+              "default": "Nuncio didn't seek Hawke out"
+            },
+            "id": "fdc5f8e3-85dc-4b73-9afe-8923cc9aa4b6"
+          },
+          {
+            "label": "Did Hawke let Zevran go?",
+            "flags": {
+              "6": "Didn't let Zevran go",
+              "7": "Let Zevran go",
+              "default": "Didn't find Zevran"
+            },
+            "id": "5972e7e7-d15c-4ff0-ba7a-754c663d7b4d"
+          }
+        ]
+      },
+      "579EF5C64BDE4D3E933F9F24AB5278E7": {
+        "chapter": "Act 3",
+        "choices": [
+          {
+            "label": "How did Hawke decide to help Uncle Gamlen?",
+            "flags": {
+              "17": "Reunited Charade and Gamlen",
+              "18": "Returned Gem of Keroshek to Gamlen",
+              "default": "Didn't help Uncle Gamlen"
+            },
+            "id": "a4f918dc-5431-4cb0-9b5e-ef686cf53a2b"
+          }
+        ]
+      },
+      "E7D7E1410D764B21BA467306B4676A57": {
+        "chapter": "Act 3",
+        "choices": [
+          {
+            "label": "What did Hawke do with Emile?",
+            "flags": {
+              "2": "Allowed Emile to go free",
+              "3": "Returned Emile to the Circle 3",
+              "5": "Returned Emile to the Circle 5",
+              "default": "Invalid choice"
+            },
+            "id": "f4cddd3d-3a9f-44a5-93a5-0231cc7454a5"
+          }
+        ]
+      },
+      "66694D5D17A043338F9D7DE569FCA7D5": {
+        "chapter": "Act 3",
+        "choices": [
+          {
+            "label": "What did Hawke do with Keran?",
+            "note": "No flag is set to differentiate between the methods of Keran's survival",
+            "flags": {
+              "12": "Killed Keran",
+              "14": "Let Keran go or Gave Keran to the templars",
+              "default": "Invalid choice"
+            },
+            "id": "5f1021c2-6d4f-4400-ad8b-dafde9418018"
+          }
+        ]
+      },
+      "D69583B49D9140AB881F27D4067F814A": {
+        "chapter": "Act 3",
+        "choices": [
+          {
+            "label": "Did Hawke side with the Mages or the Templars in the Final Battle?",
+            "flags": {
+              "2": "Sided with the Mages",
+              "3": "Sided with the Templars",
+              "default": "Didn't reach the final battle"
+            },
+            "id": "9e30c318-404a-44f7-8114-fd235db6c008"
+          }
+        ]
+      },
+      "5FDEFF4F87044A6E8E84965764A1C4B2": {
+        "chapter": "Companions",
+        "choices": [
+          {
+            "label": "Did Hawke approve of Anders' actions at the Chantry?",
+            "flags": {
+              "19": "Didn't approve of Anders' actions at the Chantry",
+              "default": "Approved of Anders' actions at the Chantry"
+            },
+            "id": "4d705203-9085-41fe-907f-68bdbc3ba47b"
+          }
+        ]
+      },
+      "57E9117224024F11AF77017CB6E5697B": {
+        "chapter": "Companions",
+        "choices": [
+          {
+            "label": "Was Merrill's clan killed?",
+            "flags": {
+              "14": "Merrill's clan was not killed",
+              "15": "Merrill's clan was killed",
+              "default": "Merrill's clan was not killed"
+            },
+            "id": "1ccc9bc5-8715-4e9f-960a-c2ce33d810ab"
+          }
+        ]
+      },
+      "6ECB8A5A28804B28949238CA3A45B81B": {
+        "chapter": "Companions",
+        "choices": [
+          {
+            "label": "Did Varric keep a piece of the red lyrium idol?",
+            "flags": {
+              "2": "Varric did not keep red lyrium idol",
+              "3": "Varric kept red lyrium idol",
+              "default": "Didn't help Varric discover cause of haunting"
+            },
+            "id": "d826def4-2a31-41c3-b4b3-4134e027decb"
+          },
+          {
+            "label": "Did Hawke help Varric discover what was haunting his brother Bartrand's mansion?",
+            "flags": {
+              "2": "Helped Varric discover cause of haunting",
+              "3": "Helped Varric discover cause of haunting",
+              "default": "Didn't help Varric discover cause of haunting"
+            },
+            "id": "0d5b17dc-9c9e-4208-a8cd-e63730032542"
+          }
+        ]
+      },
+      "5FBF48C14DF34B8DBB5D8F9A06FA114F": {
+        "chapter": "Companions",
+        "choices": [
+          {
+            "label": "Did Isabela return to Hawke after stealing the book?",
+            "flags": {
+              "2": "Isabela returned to Hawke",
+              "11": "Isabela didn't return to Hawke",
+              "default": "Didn't recruit Isabela"
+            },
+            "id": "3629a840-da7a-4d0b-be3b-07317a9468c0"
+          }
+        ]
+      },
+      "1FD3A2CBB8524DCABA91A8985B08AF66": {
+        "chapter": "Companions",
+        "choices": [
+          {
+            "label": "Something related to Varric",
+            "exclude": true,
+            "flags": {
+              "default": "Not a choice"
+            },
+            "id": "e0f7ffba-da86-40e2-aa29-a5e0623a4e34"
+          }
+        ]
+      },
+      "F216801F3A5040E6B81F2F1594C6563E": {
+        "chapter": "Companions",
+        "choices": [
+          {
+            "label": "Was Varric's brother Bartrand killed?",
+            "flags": {
+              "6": "Bartrand was killed",
+              "7": "Bartrand was not killed",
+              "default": "Bartrand was not killed"
+            },
+            "id": "301ab609-4f01-4bcc-adbf-63aba1bcc92e"
+          }
+        ]
+      },
+      "1F8D1DBCEE154E8DA258F1B2E7D6DCC8": {
+        "chapter": "Companions",
+        "choices": [
+          {
+            "label": "What was Bethany's career?",
+            "flags": {
+              "49": "Bethany died in the Deep Roads",
+              "50": "Bethany became a Grey Warden",
+              "52": "Bethany became a circle mage",
+              "default": "Bethany died while escaping Lothering"
+            },
+            "id": "3b24ee0c-b79e-4c3a-ba6d-a67c11836e87"
+          }
+        ]
+      },
+      "440003846E3F4EAEA385568EBCBE3534": {
+        "chapter": "Companions",
+        "choices": [
+          {
+            "flags": {
+              "label": "What happened to Fenris? [*]",
+              "flags": {
+                "1": "Rejected Fenris",
+                "default": "Didn't recruit Fenris"
+              }
+            },
+            "id": "296bbefe-1e1b-4578-9d9b-37f9b01a1bde"
+          }
+        ]
+      },
+      "19E51D5775C74DAAB99D262E60EC0DDF": {
+        "chapter": "Companions",
+        "choices": [
+          {
+            "label": "Did Hawke romance Isabela?",
+            "exclude": true,
+            "flags": {
+              "10": "Broke off",
+              "18": "Rejected Isabela",
+              "default": "Romanced Isabela"
+            },
+            "id": "2be4f829-f437-48ac-84d3-bba90639ccdf"
+          }
+        ]
+      },
+      "18854EB329424101AAD5D80BD648D445": {
+        "chapter": "Companions",
+        "choices": [
+          {
+            "label": "Did Hawke recruit Isabela?",
+            "flags": {
+              "17": "Recruited Isabela",
+              "default": "Didn't recruit Isabela"
+            },
+            "id": "4530373f-240e-4e3b-a412-8ae9445222d8"
+          },
+          {
+            "label": "Did Hawke recruit Sebastian?",
+            "flags": {
+              "29": "Recruited Sebastian",
+              "default": "Didn't recruit Sebastian"
+            },
+            "id": "be086588-d351-4b87-b280-d893d2c6b453"
+          },
+          {
+            "label": "What happened to Anders? [*]",
+            "flags": {
+              "23": "Anders died",
+              "default": "Anders alive & well"
+            },
+            "id": "4a84c325-b96f-440c-a8af-e78575940bc1"
+          }
+        ]
+      }
+    }
+  }
+}
