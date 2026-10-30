@@ -1,13 +1,13 @@
-import React from 'react';
 import styled from 'styled-components';
-import { Navigation, Links } from '../../components/navigation/Navigation';
+import { Navigation } from '../../components/navigation/Navigation';
+import { Links } from '../../components/navigation/links';
 
 const Container = styled.div`
   position: absolute;
   bottom: 0;
   padding: 0 50px;
   right: 0;
-  overflow-y: scroll;
+  overflow-y: auto;
   height: 100%;
 `;
 
@@ -39,7 +39,7 @@ export const About = ({ onNavigate }) => (
     <p>
       The front-end for this website was created by Alexander van Bergen, under the label of his company "StinStin". Any graphics found on the website are copyrighted to him. The Javascript code found on this website is free for anyone else to use non-commercially. If you find any bugs, please notify me by clicking the "Bug Issue" button on the navigation bar.
     </p>
-    <p>
+    <div>
       <h3>Full credits</h3>
       <CreditsTitle>Website Design</CreditsTitle>
       Alexander van Bergen (StinStin)
@@ -52,7 +52,7 @@ export const About = ({ onNavigate }) => (
 
       <CreditsTitle>DASaveReader</CreditsTitle>
       Charles Noneman
-    </p>
+    </div>
     <Navigation active={Links.About} onNavigate={onNavigate} />
   </Container>
 )

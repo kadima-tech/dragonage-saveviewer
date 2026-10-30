@@ -1,10 +1,3 @@
-// <div>
-//   <div class="text">
-//   <h2>{{stateText}}</h2>
-//   </div>
-// </div>
-
-import React from 'react';
 import styled from 'styled-components';
 
 const getText = uploadState => {
@@ -17,8 +10,6 @@ const getText = uploadState => {
       return "Idle...";
   }
 }
-// h1, h2{font-family:'Cinzel', serif;}
-// h2{font-size:20px;color:#b30201;}
 const Container = styled.div`
   padding: 0 50px;
   position: absolute;

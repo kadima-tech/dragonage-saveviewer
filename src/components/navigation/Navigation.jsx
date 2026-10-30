@@ -1,5 +1,5 @@
-import React from 'react';
 import styled from 'styled-components';
+import { Links } from './links';
 
 const Container = styled.div`
   font-family: 'Cinzel', serif;
@@ -16,11 +16,6 @@ const NavigationItemComponent = styled.a`
 const ActiveNavigationItemComponent = styled(NavigationItemComponent)`
   color: #b30201;
 `;
-
-export const Links = {
-  Home: 'Home',
-  About: 'About'
-};
 
 export const NavigationItem = ({ active, self, children, onNavigate }) => {
   if (active === self) {

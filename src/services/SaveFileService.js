@@ -1,4 +1,3 @@
-import Parallel from 'paralleljs';
 import ordering from '../assets/data/quest-ordering.json';
 import dragonageConfig from '../assets/data/dragonage.json';
 import dragonage2Config from '../assets/data/dragonage2.json';
@@ -19,53 +18,31 @@ class SaveFileService {
   }
 
   upload = async (file) => {
-    // Read the file and start the parsing process
     this.progress("parsing");
-    const buffer = await this._fetchBuffer(file);
-
-    // Start the processing thread
-    const p = new Parallel(buffer,{evalPath: "lib/jsgff/dist/eval.js"});
-    p.require('byte-buffer.js').require('jspack.js').require('datatypes.js').require('gff4.js');
-
-    const saveInfo = await p.spawn(function(buffer) {
-      /* eslint-disable */
-      gff4 = new GFF4();
-      bytebuffer = new ByteBuffer(buffer);
-      try {
-        result = gff4.read_gff4(bytebuffer);
-        //TODO: Check file version and use the right flags for Dragon Age 2 support
-        return {
-          file_version: result.header.file_version,
-          plot_data: result[16003][16400][16401]
-        };
-      } catch(e) {
-        return e;
-      }
-      /* eslint-enable */
-    },{},[buffer]);
+    const buffer = await file.arrayBuffer();
+    const saveInfo = await this._parse(buffer);
 
     this.progress("processing");
-
-    // Now we process
-    try {
-      return this._process(saveInfo);
-    } catch (e) {
-      console.error(e);
-    }
+    return this._process(saveInfo);
   }
 
-  _fetchBuffer = file => {
-    return new Promise((resolve,reject) => {
-      var reader = new FileReader();
+  _parse = buffer => new Promise((resolve, reject) => {
+    const worker = new Worker(`${import.meta.env.BASE_URL}lib/jsgff/worker.js`);
 
-      reader.onload = function(result) {
-        resolve(result.target.result);
-      };
-      reader.readAsArrayBuffer(file);
-
-      return reader
-    })
-  }
+    worker.onmessage = ({ data }) => {
+      worker.terminate();
+      if (data.error) {
+        reject(new Error(`Could not read save file: ${data.error}`));
+      } else {
+        resolve(data);
+      }
+    };
+    worker.onerror = event => {
+      worker.terminate();
+      reject(new Error(event.message || 'Could not read save file'));
+    };
+    worker.postMessage(buffer, [buffer]);
+  })
 
   _convert = (quests,game) => {
     if (!quests) {
@@ -135,7 +112,7 @@ class SaveFileService {
   _hasFlag = (plot, flag) => {
     if (flag < 32)
       return (2**flag) & plot[0];
-    else if (flag < 74)
+    else if (flag < 64)
       return (2**(flag-32)) & plot[1];
     else if (flag < 96)
       return (2**(flag-64)) & plot[2];
@@ -146,12 +123,12 @@ class SaveFileService {
   }
 
   _process = (saveInfo) => {
-    let plotOrder = [];
-    let data = [];
+    let plotOrder;
+    let data;
 
     // Validate
-    if (['V1.1', 'V2.0'].indexOf(saveInfo.file_version) < 0) {
-      throw new Error("Unknown file format - cannot convert file version " + saveInfo.file_version);
+    if (!saveInfo || ['V1.1', 'V2.0'].indexOf(saveInfo.file_version) < 0) {
+      throw new Error("Unknown file format - cannot convert file version " + saveInfo?.file_version);
     }
 
     if (saveInfo.file_version === "V1.1") {

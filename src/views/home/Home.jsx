@@ -1,7 +1,7 @@
-import React from 'react';
 import styled from 'styled-components';
-import { UploadBox } from '../../components/upload-box/UploadBox.js';
-import { Navigation, Links } from '../../components/navigation/Navigation';
+import { UploadBox } from '../../components/upload-box/UploadBox';
+import { Navigation } from '../../components/navigation/Navigation';
+import { Links } from '../../components/navigation/links';
 
 const Container = styled.div`
   padding: 0 50px;
@@ -10,6 +10,8 @@ const Container = styled.div`
   bottom: 0;
   text-align: right;
   width: 575px;
+  max-width: 100%;
+  box-sizing: border-box;
 `;
 
 const Title = styled.h1`
@@ -27,8 +29,12 @@ const Accent = styled.span`
   color:#b30201;
 `;
 
-export const Home = ({ onNavigate, onUpload }) => (
-  <Container>
+const ErrorMessage = styled.p`
+  color: #b30201;
+  font-weight: bold;
+`;
+
+export const Home = ({ onNavigate, onUpload, error }) => (
   <Container>
     <Title>Dragon Age <Accent>Save Game Tool</Accent></Title>
     <Subtitle>Use your old save-file with Dragon Age: Inquisition</Subtitle>
@@ -38,7 +44,7 @@ export const Home = ({ onNavigate, onUpload }) => (
       minor choice you made.
     </p>
     <UploadBox onUpload={onUpload} />
+    {error && <ErrorMessage role="alert">{error}</ErrorMessage>}
     <Navigation active={Links.Home} onNavigate={onNavigate} />
-    </Container>
   </Container>
 );
